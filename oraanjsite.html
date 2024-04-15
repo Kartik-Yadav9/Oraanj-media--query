@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oraanj</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- <link rel="stylesheet" href="oraanj.css"> -->
+    <style>
+    *, ::after, ::before {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Lato', sans-serif;
+        margin:0;
+    }
+    .logo {
+        max-width: 200px;
+        min-height: 90px;
+        width: 100%;
+    }
+    .anchor {
+        text-decoration: none;
+        color: black;
+    }
+    header {
+        display: flex;
+        
+        align-items: center;
+        border: 0px solid black;
+        box-shadow: 10px 0px 20px grey;
+        
+        position: fixed;
+        z-index: 100;
+        top: 0px;
+        width: 100%;
+        background-color: white;
+        flex-wrap: wrap;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .anchor:hover {
+        color: ORANGERED;
+    }
+
+    .home {
+        color: white;
+        background-color: orangered;
+        padding: 37px 13px;
+        margin-left: 270px;
+
+    }
+    .home:hover {
+        color: white;
+    }
+    .logo {
+        margin-left: 30px;
+    }
+    .boxes {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+    .box {
+        min-height: 530px;
+        border: 0px solid black;
+        background-color: #f3ede1;
+        border-radius: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 15px 15px;
+        transition: 0.4s;
+    }
+    .box:hover {
+        box-shadow: 1px 1px 5px 5px #f5e5c3;
+        transform: scale(1.01);
+    }
+    
+    .content {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content1 {
+        box-sizing: border-box;
+        width: 570px;
+        background-color: rgb(237 210 199);
+    }
+
+    .content1-heading {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .content1-description{
+        font-size: 17px;
+        padding: 0px 20px;
+        line-height: 1.6;
+        text-align: center;
+    } 
+
+    .heading-first {
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+    }
+
+    h3 {
+        font-size: 2rem;
+        font-weight: 900;
+        line-height: 32px;
+    }
+    .sections-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .section1 {
+        margin-top: 104px;
+        margin-top: 73px;
+    }
+    .heading-first > p {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+    .cards-image {
+        max-width: 335px;
+        min-height: 190px;
+        border-radius: 7%;
+        width: 100%;
+    }
+    .card-viewmore {
+        border: 0px solid black;
+        background-color: #823a18;
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 12px;
+        font-weight: 900;
+        font-size: 18px;
+        margin-top: 10px;
+        transition: 0.4s;
+    }
+    p{
+        line-height: 2px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .card-viewmore:hover {
+        background-color: white;
+        border: 1px solid #fabc35;
+        color: #fabc35;
+    }
+    .toggle {
+        display: none;
+    }
+
+    @media only screen and (max-width: 1252px) {
+        header {
+            justify-content: space-between;
+        }
+        .toggle {
+            display: block;
+            margin-right: 20px;
+        }
+        .logo {
+            margin-left: 10px;
+        }
+        .navbar{
+            display: none; 
+        }
+        .box {
+            background-color: sandybrown;
+        }
+
+        .content{
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .step1{
+            width: 100%;
+        }
+    }
+
+    
+
+
+    </style>
+</head>
+<body>
+    <header> 
+        <div class="company-logo">
+            <img src="oraanjlogo.jpeg" class="logo" alt="">
+        </div>
+        <div class="navbar">
+            <a href=""class="anchor home">Home</a>
+            <a href=""class="anchor">About us</a>
+            <a href=""class="anchor">Portfolio</a>
+            <a href=""class="anchor">Packages</a>
+            <a href=""class="anchor">Our Services</a>
+            <a href=""class="anchor">Blogs</a>
+            <a href=""class="anchor">Contact</a>
+            <a href=""class="anchor">Reviews</a>
+            <a href=""class="anchor">FAQs</a>
+        </div>
+        <div class="toggle">
+            <span class="material-symbols-outlined">
+                menu
+                </span>
+        </div>
+    </header>
+    <section class="sections-wrapper">
+           
+        <section class="section1">
+            <div class="container">
+            <div class="heading-first">
+                <h3>Renowned Interior Design Packages</h3>
+                <p>Discover our special interior design packages, carefully made to make your place look nice and comfortable. explore popular solutions that are creative, useful, and affordable by our best interior designers.</p>
+            </div>
+            <div class="boxes">
+            
+                <div class="box1 box">
+                    <img src="modern-dining-interior-design.jpg"  class="cards-image" alt="">
+                    <h2>Silver Interior Design Package</h2>
+                    <p>Phone/Video Consultation</p>
+                    <p>Site Visit</p>
+                    <p>1 To 1 Meeting With Designer</p>
+                    <p>Concept Planning</p>
+                    <p>Personalised Advice</p>
+                    <a href="" class="card-viewmore">View more</a>
+                </div>
+                <div class="box2 box">
+                    <img src="bedroom-interiors.jpg"  class="cards-image"alt="">
+                    <h2>Gold Interior Design Package</h2>
+                    <p>Silver Package Included</p>
+                    <p>Detailed Mood Board Design</p>
+                    <p>Furniture Layout Plan</p>
+                    <p>Lighting & Colour Specification</p>
+                    <p>Curated Shopping List</p>
+                    <a href="" class="card-viewmore">View more</a>
+                </div>
+                <div class="box3 box">
+                    <img src="large-living-room.jpg" class="cards-image" alt="">
+                    <h2>Platinum Interior Design Package</h2>
+                    <p>Silver & Gold Package Included</p>
+                    <p>Photo Realistic Rendered Visuals</p>
+                    <p>Technical CAD Drawings</p>
+                    <p>Trade Discounts</p>
+                    <p>Post Design Support</p>
+                    <a href="" class="card-viewmore">View more</a>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="section2">
+            <div class="container">
+
+                <div class="content">
+                    <div class="img1">
+                        <img src="step1.jpeg" class="step1">
+                    </div>
+                    <div class="content1">
+                        <p class="content1-heading">Let us get to know you</p>
+                        <p class="content1-description">Transform your space with Oraanj Interior Design, the premier choice for seamless and personalised interior design solutions. Schedule your consultation today and let our expert team bring your design vision to life. We prioritise your ideas, preferences, and needs, meticulously collecting details like budget and inspiration. With our attention to detail and comprehensive approach, we ensure a thorough understanding of your requirements. Trust us to deliver a bespoke design that perfectly aligns with your unique style and goals. Start your transformation with Oraanj Interior Design now.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </section>
+            
+
+        
+        
+</body>
+</html>

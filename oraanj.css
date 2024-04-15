@@ -1,0 +1,290 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+
+/* body {
+    font-family: 'Lato', sans-serif;
+    margin:0;
+}
+
+.logo {
+    width: 200px;
+    height: 90px;
+    width: 100%;
+}
+.anchor {
+    text-decoration: none;
+    color: black;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    border: 0px solid black;
+    box-shadow: 10px 0px 20px grey;
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.anchor:hover {
+    color: ORANGERED;
+}
+
+.home {
+    color: white;
+    background-color: orangered;
+    padding: 37px 13px;
+    margin-left: 270px;
+
+}
+.home:hover {
+    color: white;
+}
+.logo {
+    margin-left: 30px;
+}
+.boxes {
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+height: 100vh;
+flex-wrap: wrap;
+}
+.box {
+    width: 330px;
+    height: 530px;
+    border: 0px solid black;
+    background-color: aquamarine;
+    border-radius: 2%;
+
+}
+@media only screen and(max-width:425px) {
+    .box1 {
+        background-color: black;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width:425px) {
+    .box2 {
+        background-color: black;
+    }
+}
+.content {
+    display: flex;
+    justify-content: center;
+    
+}
+.content1 {
+    
+    box-sizing: border-box;
+    width: 570px;
+    background-color: rgb(237 210 199);
+}
+.heading {
+    font-size: 28px;
+    text-align: center;
+}
+
+p {
+    font-size: 17px;
+    padding: 0px 20px;
+    line-height: 1.6;
+    text-align: center;
+    
+}  */
+
+
+
+
+
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin:0;
+}
+.logo {
+    max-width: 200px;
+    min-height: 90px;
+    /* width: 100%; */
+}
+.anchor {
+    text-decoration: none;
+    color: black;
+}
+header {
+    display: flex;
+    
+    align-items: center;
+    border: 0px solid black;
+    box-shadow: 10px 0px 20px grey;
+    
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    flex-wrap: wrap;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.anchor:hover {
+    color: ORANGERED;
+}
+
+.home {
+    color: white;
+    background-color: orangered;
+    padding: 37px 13px;
+    margin-left: 270px;
+
+}
+.home:hover {
+    color: white;
+}
+.logo {
+    margin-left: 30px;
+}
+.boxes {
+display: flex;
+gap: 20px;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
+.box {
+    min-height: 530px;
+    border: 0px solid black;
+    background-color: #f3ede1;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px 15px;
+    transition: 0.4s;
+}
+.box:hover {
+    box-shadow: 1px 1px 5px 5px #f5e5c3;
+    transform: scale(1.01);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.content1 {
+    box-sizing: border-box;
+    width: 570px;
+    background-color: rgb(237 210 199);
+}
+
+.content1-heading {
+    font-size: 28px;
+    text-align: center;
+}
+
+.content1-description{
+    font-size: 17px;
+    padding: 0px 20px;
+    line-height: 1.6;
+    text-align: center;
+} 
+
+.heading-first {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 32px;
+}
+.sections-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.section1 {
+    margin-top: 104px;
+    margin-top: 73px;
+}
+.heading-first > p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.cards-image {
+    max-width: 335px;
+    min-height: 190px;
+    border-radius: 7%;
+    width: 100%;
+}
+.card-viewmore {
+    border: 0px solid black;
+    background-color: #823a18;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: 900;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: 0.4s;
+}
+p{
+    line-height: 2px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.card-viewmore:hover {
+    background-color: white;
+    border: 1px solid #fabc35;
+    color: #fabc35;
+}
+.toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 1252px) {
+    header {
+        justify-content: space-between;
+    }
+    .toggle {
+        display: block;
+        margin-right: 20px;
+    }
+    .logo {
+        margin-left: 10px;
+    }
+    .navbar{
+        display: none; 
+    }
+    .box {
+        background-color: sandybrown;
+    }
+}
